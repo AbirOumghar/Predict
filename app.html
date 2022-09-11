@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Prediction de puissance optimale estimée </title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="app.js"></script>
+	<link rel="stylesheet" href="app.css">
+</head>
+<body>
+<div class="img"></div>
+
+<form class="form">
+	<h2> puissance_electrique_maximale_appelee_en_KVA </h2>
+    <input class="area"  type="text" id="uiPuissance_electrique_maximale_appelee_en_KVA" class="floatLabel" name="puissance_electrique_maximale_appelee_en_KVA" value="30">
+	</form>
+<form class="form">
+	<h2>moyenne_saisonniere</h2>
+    <input class="area"  type="text" id="uiMoyenne_saisonniere" class="floatLabel" name="moyenne_saisonniere" value="30">
+	</form>
+
+<form class="form">
+<h2>Mois</h2>
+<div>
+	<select class="moiss" name="" id="uiMoiss">
+		<option value="" disabled="disabled" selected="selected">Choisir un mois</option>
+		<option>janvier</option>
+	</select>
+</form>
+
+
+</div>
+	<form class="form">
+		<button class="soumettre" onclick="onClickedEstimatePrice()" type="button">puissance optimale estimee</button>
+	<div id="uiEstimatedPrice" class="result">	<h2></h2> </div></form>
+  </body>
+
+
+
+
